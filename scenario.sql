@@ -1,0 +1,19 @@
+-- SQLite metadata for scenario 1
+CREATE TABLE metadata_table (
+    JOB TEXT,
+    RULE_ID TEXT,
+    SRC_SQL TEXT,
+    TGT_SQL TEXT
+);
+
+INSERT INTO metadata_table (JOB, RULE_ID, SRC_SQL, TGT_SQL) VALUES
+('RCON_JOB_1', 'RULE_1',
+ 'SELECT COUNT(*) FROM SRC_TABLE_A',
+ 'SELECT COUNT(*) FROM TGT_TABLE_A'
+);
+
+INSERT INTO metadata_table (JOB, RULE_ID, SRC_SQL, TGT_SQL) VALUES
+('RCON_JOB_1', 'RULE_2',
+ 'SELECT COUNT(*) FROM SRC_TABLE_B',
+ 'SELECT COUNT(*) FROM TGT_TABLE_B'
+);
